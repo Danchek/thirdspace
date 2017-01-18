@@ -3,4 +3,7 @@ document.addEventListener("DOMContentLoaded", function(){
      $(".nav").find(".active").removeClass("active");
      $(this).parent().addClass("active");
   });
+  $("#sendurl").submit(function(e) {
+    e.preventDefault();
+  });
 });

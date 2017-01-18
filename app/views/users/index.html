@@ -1,142 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Third Space</title>
-  <!-- <link rel="stylesheet" href="stylesheets/index.css"> -->
-  <link
-  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-  rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-  crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-</head>
-<body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Brand</a>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a  href="#">HOME</a></li>
+        <li><a href="#">PUPIL PROFILES</a></li>
+        <li><a href="#">SESSIONS</a></li>
+        <li><a href="#">CURRICULUM</a></li>
+        <li><a href="#">MANAGE ACCOUNTS</a></li>
+        <li><a href="#">HELP & RESOURCES</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<article>
+  <div class="container main-container">
+    <div class="row">
+      <h1> Give 100, Get&pound;100!</h1>
+      <p><small>Recommend Third Space to other schools and for each school<br>that signs up you each get &pound;100 off next purchase! </small></p>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <figure>
+          <img src="images/header.jpg">
+          <figcaption>Recommend us<br>to another school</figcaption>
+        </figure>
       </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a  href="#">HOME</a></li>
-          <li><a href="#">PUPIL PROFILES</a></li>
-          <li><a href="#">SESSIONS</a></li>
-          <li><a href="#">CURRICULUM</a></li>
-          <li><a href="#">MANAGE ACCOUNTS</a></li>
-          <li><a href="#">HELP & RESOURCES</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-  <article>
-    <div class="container main-container">
-      <div class="row">
-        <h1> Give 100, Get&pound;100!</h1>
-        <p><small>Recommend Third Space to other schools and for each school<br>that signs up you each get &pound;100 off next purchase! </small></p>
+      <div class="col-sm-4">
+        <figure>
+          <img src="images/header.jpg">
+          <figcaption>The school signs<br>up for new term</figcaption>
+        </figure>
       </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <figure>
-            <img src="images/header.jpg">
-            <figcaption>Recommend us<br>to another school</figcaption>
-          </figure>
-        </div>
-        <div class="col-sm-4">
-          <figure>
-            <img src="images/header.jpg">
-            <figcaption>The school signs<br>up for new term</figcaption>
-          </figure>
-        </div>
-        <div class="col-sm-4">
-          <figure>
-            <img src="images/header.jpg">
-            <figcaption>You both get &pound; 300</figcaption>
-          </figure>
-        </div>
+      <div class="col-sm-4">
+        <figure>
+          <img src="images/header.jpg">
+          <figcaption>You both get &pound; 300</figcaption>
+        </figure>
       </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="form-container">
-            <p class="form-title">
-              Forward  your unique school
-              <br>
-              code to other schools:
-            </p>
-            <form method='POST' action='' target='_blank'>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-container">
+          <p class="form-title">
+            Forward  your unique school
+            <br>
+            code to other schools:
+          </p>
+          <form id="sendurl" action='' method='post' target='_blank'>
             <fieldset>
               <div class="field">
                 <input type="url" name="url" autofocus required placeholder="Url to be forwarder">
               </div>
               <input type="submit"  value="COPY LINK">
             </fieldset>
-            </form>
-          </div>
+          </form>
         </div>
-        <div class="col-sm-6">
-          <div class="form-container">
-            <p class="form-title">
-              Use our template to send lots
-              <br>
-              of recommendations quickly:
-            </p>
-            <form method='POST' action=''>
+      </div>
+      <div class="col-sm-6">
+        <div class="form-container">
+          <p class="form-title">
+            Use our template to send lots
+            <br>
+            of recommendations quickly:
+          </p>
+          <form method='POST' action=''>
             <fieldset>
               <div class="field">
                 <input type="email" name="user[email]" required placeholder="Receivers email address">
               </div>
               <input type="submit" value="SEND EMAIL">
             </fieldset>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div>
-          <p>Or share using Social Media:</p>
-        </div>
-        <div>
-        <div>
-          <div class="social-wrapper">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-          </div>
-          <div class="social-wrapper">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-          </div>
-          <div class="social-wrapper">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </div>
-          <div class="social-wrapper">
-            <i class="fa fa-google-plus" aria-hidden="true"></i>
-          </div>
+          </form>
         </div>
       </div>
     </div>
-  </article>
-  <footer>
-    <div class="col-sm-4">
-      <div><p><i class="fa fa-map-marker" aria-hidden="true"></i>Lorem ipsum</p></div>
-      <div><p><i class="fa fa-envelope-o" aria-hidden="true"></i>Lorem ipsum</p></div>
-      <div><p><i class="fa fa-mobile" aria-hidden="true"></i>Lorem ipsum</p></div>
+    <div class="row">
+      <div>
+        <p>Or share using Social Media:</p>
+      </div>
+      <div>
+      <div>
+        <div class="social-wrapper">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+        </div>
+        <div class="social-wrapper">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        </div>
+        <div class="social-wrapper">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </div>
+        <div class="social-wrapper">
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-4"></div>
-    <div class="col-sm-4"></div>
-  </footer>
-</body>
-<script
-  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-  crossorigin="anonymous"></script>
-</html>
+  </div>
+</article>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="centered">
+          <div><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp;Lorem ipsum</a></div>
+          <div><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;Lorem ipsum</a></div>
+          <div><a href=""><i class="fa fa-mobile" aria-hidden="true"></i>&nbsp;Lorem ipsum</a></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="centered">
+          <div><a href=""><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;Lorem ipsum</a></div>
+          <div><a href=""><i class="fa fa-youtube" aria-hidden="true"></i>&nbsp;Lorem ipsum</a></div>
+          <div><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i>&nbsp;Lorem ipsum</a></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="centered">
+          <div><a href="">&nbsp;About Us</a></div>
+          <div><a href="">&nbsp;Careers</a></div>
+          <div><a href="">&nbsp;Terms & Conditions</a></div>
+          <div><a href="">&nbsp;Privacy Policy</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
