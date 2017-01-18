@@ -1,0 +1,112 @@
+body{
+  background-color: #EAF0FD;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+h1{
+  color:#4C7CDF;
+}
+nav.navbar{
+  margin-bottom: 0;
+  border-bottom: 3px solid blue;
+}
+img{
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+figure{
+  margin-bottom: 20px;
+}
+figcaption{
+  text-align: center;
+  font-size: 1.2em;
+}
+.nav li.active{
+  border-bottom: 3px solid yellow;
+  top: 3px;
+}
+.nav li.active a{
+  top: -3px;
+}
+.nav li a{
+  font-weight: bold;
+}
+.navbar-default,
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+  background: #fff;
+}
+.main-container{
+  margin: 0 auto 20px auto;
+  padding: 30px 50px;
+  background-color: #fff;
+}
+.row{
+  margin-top: 40px;
+}
+.form-container{
+  margin-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom:30px;
+  height: 200px;
+  width: 100%;
+  background-color: #4C7CDF;
+  text-align: center;
+}
+.form-container p{
+  font-size: 1.2em;
+  color: #fff;
+}
+input{
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 0.6em;
+}
+input[type='submit']{
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #FE8041;
+  border: 1px solid #fff;
+  border-radius: 0;
+}
+input[type='email'],
+input[type='url']{
+  width: 80%;
+  padding: 12px 16px;
+}
+input[type='email']::-webkit-input-placeholder,
+input[type='url']::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: grey;
+  text-align: left;
+}
+input[type='email']::-moz-placeholder,
+input[type='url']::-moz-placeholder { /* Firefox 19+ */
+  color: grey;
+  text-align: left;
+}
+input[type='email']:-ms-input-placeholder,
+input[type='url']:-ms-input-placeholder { /* IE 10+ */
+  color: grey;
+  text-align: left;
+}
+input[type='email']:-moz-placeholder,
+input[type='url']:-moz-placeholder { /* Firefox 18- */
+  color: grey;
+  text-align: left;
+}
+.social-wrapper{
+  background-color: #4C7CDF;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: #fff;
+  display: inline-block;
+  margin: 0 10px;
+  padding: 4px;
+}
+footer{
+  background-color: #232D33;
+}
