@@ -12,7 +12,7 @@ class UsersController < ApplicationController
         UserMailer.welcome_email(@user).deliver_later
         format.html { render :index, notice: 'Your email was successfully sent' }
       else
-        format.html { render :index }
+        format.html { render :index, notice: 'Please make sure that you have filled correct email' }
       end
     end
   end
