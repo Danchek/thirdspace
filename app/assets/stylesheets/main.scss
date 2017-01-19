@@ -32,12 +32,13 @@ figcaption{
 }
 .nav li a{
   font-weight: bold;
+  font-size: 0.7em;
 }
 .navbar-default,
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover{
-  background: #fff;
+  background-color: #fff;
 }
 .main-container{
   margin: 0 auto 20px auto;
@@ -109,4 +110,16 @@ input[type='url']:-moz-placeholder { /* Firefox 18- */
 }
 footer{
   background-color: #232D33;
+  color: #fff;
+  text-align: left;
+  padding-bottom: 20px;
+}
+footer a{
+  color: #fff;
+}
+footer i{
+  color: #4C7CDF;
+}
+.centered{
+  margin: 0 auto;
 }
