@@ -3,16 +3,15 @@ class UsersController < ApplicationController
   def index
   end
 
-
   def create
     @user = User.new(user_params)
 
     respond_to do |format|
       if @user.save
         UserMailer.welcome_email(@user).deliver_later
-        format.html { render :index, notice: 'Your email was successfully sent' }
+        format.html { redirect_to root_path, notice: 'Your email was successfully sent' }
       else
-        format.html { render :index, notice: 'Please make sure that you have filled correct email' }
+        format.html { redirect_to root_path, notice: 'Please make sure that you have filled correct email' }
       end
     end
   end
